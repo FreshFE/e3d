@@ -9,77 +9,77 @@
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/2.jpg",
 		"yScale": 113,
 		"timeout": 500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/3.jpg",
 		"yScale": 0,
 		"timeout": 1000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/4.jpg",
 		"yScale": 0,
 		"timeout": 1500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/5.jpg",
 		"yScale": 75,
 		"timeout": 2000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/6.jpg",
 		"yScale": 0,
 		"timeout": 2500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/7.jpg",
 		"yScale": 225,
 		"timeout": 3000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/8.jpg",
 		"yScale": 395,
 		"timeout": 3500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/9.jpg",
 		"yScale": 395,
 		"timeout": 4000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/10.jpg",
 		"yScale": 265,
 		"timeout": 4500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/11.jpg",
 		"yScale": 265,
 		"timeout": 5000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg",
+		"img": "cases/cover/12.jpg",
 		"yScale": 373,
 		"timeout": 5500
 	}
