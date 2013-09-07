@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
     <head>
         <meta charset="utf-8">
         <title>E3D</title>
@@ -10,26 +10,14 @@
         <script type="text/javascript" src="asset/js/vendor/angular.min.js"></script>
         <script type="text/javascript" src="asset/win8/lib/script.js"></script>
     </head>
-    <body>
+    <body ng-controller="HomeController">
         <div id="place">
             <div id="name1">E3D MIS</div>
             <div id="wrapper1">
-                <div class="tile" id="thumb1-1">
-                    <a href="#"><img src="cases/cover/1.jpg"></a>
+
+                <div ng-repeat="item in items" class="tile" id="thumb1-{{ $index + 1}}">
+                    <a href="view.html#{{ item.category }}"><img src="{{ item.img }}"></a>
                 </div>
-                <div class="tile" id="thumb1-2">
-                    <a href="#"><img src="cases/cover/1.jpg"></a>
-                </div>
-                <div class="tile" id="thumb1-3"></div>
-                <div class="tile" id="thumb1-4"></div>
-                <div class="tile" id="thumb1-5"></div>
-                <div class="tile" id="thumb1-6"></div>
-                <div class="tile" id="thumb1-7"></div>
-                <div class="tile" id="thumb1-8"></div>
-                <div class="tile" id="thumb1-9"></div>
-                <div class="tile" id="thumb1-10"></div>
-                <div class="tile" id="thumb1-11"></div>
-                <div class="tile" id="thumb1-12"></div>
             
                 <form action="" method="get">
                     <input type="text" name="q" value="" /><button type="submit"></button>
