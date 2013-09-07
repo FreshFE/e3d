@@ -2,61 +2,85 @@
 	{
 		"title": "标题一",
 		"category": "city",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 0,
+		"timeout": 1
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 113,
+		"timeout": 500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 0,
+		"timeout": 1000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 0,
+		"timeout": 1500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 75,
+		"timeout": 2000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 0,
+		"timeout": 2500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 225,
+		"timeout": 3000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 395,
+		"timeout": 3500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 395,
+		"timeout": 4000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 265,
+		"timeout": 4500
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 265,
+		"timeout": 5000
 	},
 	{
 		"title": "标题一",
 		"category": "#",
-		"img": "cases/cover/1.jpg"
+		"img": "cases/cover/1.jpg",
+		"yScale": 373,
+		"timeout": 5500
 	}
 ]

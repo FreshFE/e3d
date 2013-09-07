@@ -345,114 +345,114 @@ button:hover{
 #thumb-1 {
 	width: 215px;
 	height: 103px;
+	left: 0px;
 }
 #thumb-1.ready {
-	left: 0px;
 	top: 0px;
 }
 
 #thumb-2 {
 	width: 215px;
 	height: 102px;
+	left: 0px;
 }
 #thumb-2.ready {
-	left: 0px;
 	top: 113px;
 }
 
 #thumb-3 {
 	width:140px;
 	height:65px;
+	left:225px;
 }
 #thumb-3.ready {
-	left:225px;
 	top:0px;
 }
 
 #thumb-4 {
 	width:140px;
 	height:65px;
+	left:375px;
 }
 #thumb-4.ready {
-	left:375px;
 	top:0px;
 }
 
 #thumb-5 {
 	width:290px;
 	height:140px;
+	left:225px;
 }
 #thumb-5.ready {
-	left:225px;
 	top:75px;
 }
 
 #thumb-6 {
 	width:440px;
 	height:215px;
+	left:525px;
 }
 #thumb-6.ready {
-	left:525px;
 	top:0px;
 }
 
 #thumb-7 {
 	width:330px;
 	height:160px;
+	left:0px;
 }
 #thumb-7.ready {
-	left:0px;
 	top:225px;
 }
 
 #thumb-8 {
 	width:160px;
 	height:75px;
+	left:0px;
 }
 #thumb-8.ready {
-	left:0px;
 	top:395px;
 }
 
 #thumb-9 {
 	width:160px;
 	height:75px;
+	left:170px;
 }
 #thumb-9.ready {
-	left:170px;
 	top:395px;
 }
 
 #thumb-10 {
 	width:420px;
 	height:205px;
+	left:340px;
 }
 #thumb-10.ready {
-	left:340px;
 	top:265px;
 }
 
 #thumb-11 {
 	width:195px;
 	height:98px;
+	left:770px;
 }
 #thumb-11.ready {
-	left:770px;
 	top:265px;
 }
 
 #thumb-12 {
 	width:195px;
 	height:97px;
+	left:770px;
 }
 #thumb-12.ready {
-	left:770px;
 	top:373px;
 }
 
 #wrapper1 .tile {
 	position: absolute;
-	top: 0;
+	top: 2000px;
 }
 
 #wrapper1 .tile a {
