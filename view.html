@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
 <head>
 	<meta charset="utf-8">
 	<title>E3D viewer</title>
 
 	<link rel="stylesheet" type="text/css" href="asset/css/base.css">
+
+	<script type="text/javascript" src="asset/js/vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="asset/js/vendor/angular.min.js"></script>
 	<script type="text/javascript" src="asset/js/viewer.js"></script>
 </head>
-<body>
+<body ng-controller="WallController">
 
 	<div class="header">
 		<div class="logo">Logo</div>
