@@ -20,10 +20,13 @@ var app = angular.module('App', []);
 
 app.controller('HomeController', function($scope, $http) {
 
+	/**
+	 * 数据项
+	 */
 	$scope.items = [];
 
 	/**
-	 * 动画方法
+	 * 飞入动画
 	 */
 	$scope.flewIn = function(id, y, timeout) {
 
@@ -31,15 +34,24 @@ app.controller('HomeController', function($scope, $http) {
 
 		setTimeout(function() {
 			$('#thumb-'+id).transition({
-				top: y
-			}, 1000, 'snap')
-			.transition({
-				// perspective: '500px',
-				rotateY: '180deg'
-			}, timeout, 'snap')
-			.transition({
-				rotateY: '360deg'
-			});
+				top: y,
+			}, 1000, 'snap');
+		}, timeout);
+	}
+
+	/**
+	 * 飞出动画
+	 */
+	$scope.flewOut = function(id, y, timeout) {
+
+		timeout = id * 150;
+
+		setTimeout(function() {
+
+			$('#thumb-'+id).transition({
+				top: -1000,
+			}, 2000);
+
 		}, timeout);
 	}
 
@@ -55,10 +67,30 @@ app.controller('HomeController', function($scope, $http) {
 			$scope.items = data;
 
 			$.each(data, function(index, value) {
-				$scope.flewIn(index + 1, value.yScale, value.timeout);
+				$scope.flewIn(index, value.yScale, value.timeout);
 			});
 		});
 	};
+
+	/**
+	 * 关闭并跳转地址
+	 */
+	$scope.closed = function(id) {
+
+		// 遍历飞出tiles
+		var data = $scope.items;
+
+		$.each(data, function(index, value) {
+			$scope.flewOut(index, value.yScale, value.timeout);
+		});
+
+		// 跳转到指定url地址
+		var url = 'view.html#' + $scope.items[id].category;
+
+		setTimeout(function() {
+			window.location.href = url;
+		}, 2500);
+	}
 
 	$scope.fetch();
 
