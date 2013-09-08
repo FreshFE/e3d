@@ -1,14 +1,18 @@
 [
 	{
-		"title": "Paris"
+		"title": "Paris",
+		"category": "city-paris"
 	},
 	{
-		"title": "New York"
+		"title": "New York",
+		"category": "city-newyork"
 	},
 	{
-		"title": "London"
+		"title": "London",
+		"category": "city-london"
 	},
 	{
-		"title": "Rome"
+		"title": "Rome",
+		"category": "city-rome"
 	}
 ]

@@ -1,0 +1,16 @@
+{
+	"title": "New York",
+	"category": "city-newyork",
+	"photos": [
+		{
+			"name": "标题标题",
+			"descript": "描述，描述",
+			"img": "cases/city/newyork/1.jpg"
+		},
+		{
+			"name": "标题标题",
+			"descript": "描述，描述",
+			"img": "cases/city/newyork/2.jpg"
+		}
+	]
+}

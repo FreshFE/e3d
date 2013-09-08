@@ -50,4 +50,9 @@ app.controller('WallController', function($scope, $http) {
 	$scope.fetchMenus();
 	$scope.fetchViewer();
 
+	$(window).bind('hashchange', function() {
+		$scope.viewer = [];
+		$scope.fetchViewer();
+	});
+
 });

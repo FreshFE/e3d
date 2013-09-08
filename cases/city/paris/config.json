@@ -1,65 +1,21 @@
 {
 	"title": "Paris",
+	"category": "city-paris",
 	"photos": [
 		{
 			"name": "标题标题",
 			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
+			"img": "cases/city/paris/1.jpg"
 		},
 		{
 			"name": "标题标题",
 			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
+			"img": "cases/city/paris/2.jpg"
 		},
 		{
 			"name": "标题标题",
 			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
-		},
-		{
-			"name": "标题标题",
-			"descript": "描述，描述",
-			"img": "cases/city/paris/4.jpg"
+			"img": "cases/city/paris/3.jpg"
 		}
 	]
 }
