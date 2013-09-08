@@ -1,0 +1,84 @@
+@import "mixin";
+@import "compass";
+
+.header {
+	padding: 0 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, .2);
+	margin-bottom: 40px;
+
+	.logo {
+		float: left;
+		font-size: 30px;
+		color: #fff;
+		line-height: 50px;
+	}
+
+	.nav-current {
+		float: left;
+		margin-left: 50px;
+		color: #fff;
+		line-height: 50px;
+	}
+
+	.nav-right {
+		float: right;
+
+		ul.nav {
+			li {
+				float: left;
+				line-height: 50px;
+				margin-left: 20px;
+
+				a {
+					color: #888;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	width: 940px;
+	margin: 0 auto;
+}
+
+ul.nav-photowall {
+
+	margin-left: -20px;
+	margin-top: -20px;
+
+	li {
+		width: 220px;
+		margin-left: 20px;
+		margin-top: 20px;
+		cursor: pointer;
+		
+
+		.imgbox {
+			background: rgba(255, 255, 255, .2);
+			margin-bottom: 10px;
+
+			width: 200px;
+			height: 200px;
+			padding: 9px;
+			border: 1px solid rgba(255, 255, 255, .3);
+			line-height: 200px;
+
+			img {
+				max-width: 200px;
+				max-height: 200px;
+				vertical-align: middle;
+			}
+		}
+
+		.titlebox {
+			color: #888;
+			text-align: center;
+			font-size: 14px;
+			line-height: 18px;
+			height: 36px;
+			overflow: hidden;
+		}
+	}
+}
