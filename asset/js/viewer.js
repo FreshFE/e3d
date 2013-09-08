@@ -39,6 +39,11 @@ app.controller('WallController', function($scope, $http) {
 
 			console.log(data);
 			$scope.viewer = data;
+
+			$(".fancybox").fancybox({
+				openEffect	: 'none',
+				closeEffect	: 'none'
+			});
 		});
 	};
 

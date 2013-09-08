@@ -8,12 +8,19 @@
 
 	<script type="text/javascript" src="asset/js/vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="asset/js/vendor/angular.min.js"></script>
+
+	<!-- Fancybox -->
+	<link rel="stylesheet" type="text/css" href="asset/js/vendor/fancybox/source/jquery.fancybox.css">
+	<script type="text/javascript" src="asset/js/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
+
 	<script type="text/javascript" src="asset/js/viewer.js"></script>
 </head>
 <body ng-controller="WallController">
 
 	<div class="header">
-		<div class="logo">Logo</div>
+		<div class="logo">
+			<a href="index.html">Logo</a>
+		</div>
 		<div class="nav-current">
 			{{ viewer.title }}
 		</div>
@@ -30,7 +37,9 @@
 
 			<li ng-repeat="photo in viewer.photos ">
 				<div class="imgbox">
-					<img src="{{ photo.img }}">
+					<a href="{{ photo.img }}" class="fancybox" rel="gallery" title="{{ photo.descript }}">
+						<img src="{{ photo.img }}">
+					</a>
 				</div>
 				<div class="titlebox">
 					{{ photo.name }}

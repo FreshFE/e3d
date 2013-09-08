@@ -447,43 +447,48 @@ body {
   color: #fff;
   line-height: 50px;
 }
-/* line 17, ../sass/project/_content.scss */
+/* line 16, ../sass/project/_content.scss */
+.header .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 22, ../sass/project/_content.scss */
 .header .nav-current {
   float: left;
   margin-left: 50px;
   color: #fff;
   line-height: 50px;
 }
-/* line 24, ../sass/project/_content.scss */
+/* line 29, ../sass/project/_content.scss */
 .header .nav-right {
   float: right;
 }
-/* line 28, ../sass/project/_content.scss */
+/* line 33, ../sass/project/_content.scss */
 .header .nav-right ul.nav li {
   float: left;
   line-height: 50px;
   margin-left: 20px;
 }
-/* line 33, ../sass/project/_content.scss */
+/* line 38, ../sass/project/_content.scss */
 .header .nav-right ul.nav li a {
   color: #888;
 }
 
-/* line 41, ../sass/project/_content.scss */
+/* line 46, ../sass/project/_content.scss */
 .content {
   width: 940px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-/* line 47, ../sass/project/_content.scss */
+/* line 52, ../sass/project/_content.scss */
 ul.nav-photowall {
   margin-left: -20px;
   margin-top: -20px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 53, ../sass/project/_content.scss */
+/* line 58, ../sass/project/_content.scss */
 ul.nav-photowall li {
   width: 220px;
   margin-left: 20px;
@@ -491,7 +496,7 @@ ul.nav-photowall li {
   cursor: pointer;
   float: left;
 }
-/* line 60, ../sass/project/_content.scss */
+/* line 65, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox {
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 10px;
@@ -501,13 +506,13 @@ ul.nav-photowall li .imgbox {
   border: 1px solid rgba(255, 255, 255, 0.03);
   line-height: 200px;
 }
-/* line 70, ../sass/project/_content.scss */
+/* line 75, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox img {
   max-width: 200px;
   max-height: 200px;
   vertical-align: middle;
 }
-/* line 77, ../sass/project/_content.scss */
+/* line 82, ../sass/project/_content.scss */
 ul.nav-photowall li .titlebox {
   color: #888;
   text-align: center;
