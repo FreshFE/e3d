@@ -41,28 +41,30 @@
 .content {
 	width: 940px;
 	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 ul.nav-photowall {
 
 	margin-left: -20px;
 	margin-top: -20px;
+	@include clearfix();
 
 	li {
 		width: 220px;
 		margin-left: 20px;
 		margin-top: 20px;
 		cursor: pointer;
-		
+		float: left;
 
 		.imgbox {
-			background: rgba(255, 255, 255, .2);
+			background: rgba(255, 255, 255, .1);
 			margin-bottom: 10px;
 
 			width: 200px;
 			height: 200px;
 			padding: 9px;
-			border: 1px solid rgba(255, 255, 255, .3);
+			border: 1px solid rgba(255, 255, 255, .03);
 			line-height: 200px;
 
 			img {

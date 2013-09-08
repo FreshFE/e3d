@@ -11,9 +11,9 @@ app.controller('WallController', function($scope, $http) {
 
 	$scope.viewer = [];
 
-	$scope.menu = [];
+	$scope.menus = [];
 
-	$scope.fetchMenu = function() {
+	$scope.fetchMenus = function() {
 
 		var hashArray = getHashArray();
 
@@ -21,9 +21,7 @@ app.controller('WallController', function($scope, $http) {
 			method: "GET",
 			url: 'cases/' + hashArray[0] + '/menu.json'
 		}).success(function(data, status, headers, config) {
-
-			console.log(data);
-			$scope.menu = data;
+			$scope.menus = data;
 		});
 	}
 
@@ -44,7 +42,7 @@ app.controller('WallController', function($scope, $http) {
 		});
 	};
 
-	$scope.fetchMenu();
+	$scope.fetchMenus();
 	$scope.fetchViewer();
 
 });

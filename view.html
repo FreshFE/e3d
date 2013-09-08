@@ -15,15 +15,11 @@
 	<div class="header">
 		<div class="logo">Logo</div>
 		<div class="nav-current">
-			当前类别
+			{{ viewer.title }}
 		</div>
 		<div class="nav-right">
 			<ul class="nav">
-				<li><a href="#">类别1</a></li>
-				<li><a href="#">类别1</a></li>
-				<li><a href="#">类别1</a></li>
-				<li><a href="#">类别1</a></li>
-				<li><a href="#">类别1</a></li>
+				<li ng-repeat="menu in menus"><a href="#">{{ menu.title }}</a></li>
 			</ul>
 		</div>
 	</div>
@@ -32,12 +28,12 @@
 
 		<ul class="nav nav-photowall">
 
-			<li>
+			<li ng-repeat="photo in viewer.photos ">
 				<div class="imgbox">
-					<img src="cases/cover/1.jpg">
+					<img src="{{ photo.img }}">
 				</div>
 				<div class="titlebox">
-					标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+					{{ photo.name }}
 				</div>
 			</li>
 

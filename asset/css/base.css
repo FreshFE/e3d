@@ -473,37 +473,41 @@ body {
 .content {
   width: 940px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-/* line 46, ../sass/project/_content.scss */
+/* line 47, ../sass/project/_content.scss */
 ul.nav-photowall {
   margin-left: -20px;
   margin-top: -20px;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 51, ../sass/project/_content.scss */
+/* line 53, ../sass/project/_content.scss */
 ul.nav-photowall li {
   width: 220px;
   margin-left: 20px;
   margin-top: 20px;
   cursor: pointer;
+  float: left;
 }
-/* line 58, ../sass/project/_content.scss */
+/* line 60, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   margin-bottom: 10px;
   width: 200px;
   height: 200px;
   padding: 9px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.03);
   line-height: 200px;
 }
-/* line 68, ../sass/project/_content.scss */
+/* line 70, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox img {
   max-width: 200px;
   max-height: 200px;
   vertical-align: middle;
 }
-/* line 75, ../sass/project/_content.scss */
+/* line 77, ../sass/project/_content.scss */
 ul.nav-photowall li .titlebox {
   color: #888;
   text-align: center;
