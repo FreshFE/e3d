@@ -42,7 +42,8 @@ app.controller('WallController', function($scope, $http) {
 
 			$(".fancybox").fancybox({
 				openEffect	: 'none',
-				closeEffect	: 'none'
+				closeEffect	: 'none',
+				padding: 0
 			});
 		});
 	};

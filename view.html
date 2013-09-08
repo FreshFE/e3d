@@ -37,7 +37,7 @@
 
 			<li ng-repeat="photo in viewer.photos ">
 				<div class="imgbox">
-					<a href="{{ photo.img }}" class="fancybox" rel="gallery" title="{{ photo.descript }}">
+					<a href="{{ photo.img }}" class="fancybox" rel="gallery" title="<div style='font-size: 16px;'>{{ photo.name }}</div><div style='max-width: 600px; white-space: pre-wrap;'>{{ photo.descript }}</div>">
 						<img src="{{ photo.img }}">
 					</a>
 				</div>

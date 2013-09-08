@@ -1,10 +1,10 @@
 {
-	"title": "Paris",
+	"title": "巴黎",
 	"category": "city-paris",
 	"photos": [
 		{
 			"name": "标题标题",
-			"descript": "描述，描述",
+			"descript": "巴黎（Paris），法兰西共和国首都和最大城市，法国的政治、经济、文化、商业中心，全球仅次于纽约、伦敦和东京的第四大国际大都市。",
 			"img": "cases/city/paris/1.jpg"
 		},
 		{
