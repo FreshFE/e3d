@@ -2,10 +2,13 @@
 @import "compass";
 
 .header {
+	position: absolute;
+	width: 100%;
 	padding: 0 50px;
 	height: 50px;
 	background: rgba(255, 255, 255, .2);
-	margin-bottom: 40px;
+	top: -50px;
+	left: 0;
 
 	.logo {
 		float: left;

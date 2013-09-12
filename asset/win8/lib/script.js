@@ -30,12 +30,12 @@ app.controller('HomeController', function($scope, $http) {
 	 */
 	$scope.flewIn = function(id, y, timeout) {
 
-		timeout = id * 150;
+		timeout = Math.floor(Math.random() * 30) * 20;
 
 		setTimeout(function() {
 			$('#thumb-'+id).transition({
 				top: y,
-			}, 1000, 'snap');
+			}, 300, 'snap');
 		}, timeout);
 	}
 
@@ -44,13 +44,15 @@ app.controller('HomeController', function($scope, $http) {
 	 */
 	$scope.flewOut = function(id, y, timeout) {
 
-		timeout = id * 150;
+		timeout = Math.floor(Math.random() * 30) * 20;
+
+		id = 11 - id;
 
 		setTimeout(function() {
 
 			$('#thumb-'+id).transition({
-				top: -1000,
-			}, 2000);
+				top: 1000,
+			}, 300);
 
 		}, timeout);
 	}
@@ -89,7 +91,7 @@ app.controller('HomeController', function($scope, $http) {
 
 		setTimeout(function() {
 			window.location.href = url;
-		}, 2500);
+		}, 2000);
 	}
 
 	$scope.fetch();

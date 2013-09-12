@@ -37,7 +37,6 @@ app.controller('WallController', function($scope, $http) {
 			url: 'cases/' + hashArray[0] + '/' + hashArray[1] + '/config.json'
 		}).success(function(data, status, headers, config) {
 
-			console.log(data);
 			$scope.viewer = data;
 
 			$(".fancybox").fancybox({
@@ -55,5 +54,13 @@ app.controller('WallController', function($scope, $http) {
 		$scope.viewer = [];
 		$scope.fetchViewer();
 	});
+
+});
+
+$(document).ready(function() {
+
+	$('#J_header').transition({
+		'top': 0
+	}, 800, 'ease');
 
 });
