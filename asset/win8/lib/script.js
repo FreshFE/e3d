@@ -28,7 +28,7 @@ app.controller('HomeController', function($scope, $http) {
 	/**
 	 * 飞入动画
 	 */
-	$scope.flewIn = function(id, y, timeout) {
+	$scope.flewIn = function(id, y) {
 
 		timeout = Math.floor(Math.random() * 30) * 20;
 
@@ -42,11 +42,11 @@ app.controller('HomeController', function($scope, $http) {
 	/**
 	 * 飞出动画
 	 */
-	$scope.flewOut = function(id, y, timeout) {
+	$scope.flewOut = function(id, y) {
 
 		timeout = Math.floor(Math.random() * 30) * 20;
 
-		id = 11 - id;
+		id = 12 - id;
 
 		setTimeout(function() {
 
@@ -69,7 +69,7 @@ app.controller('HomeController', function($scope, $http) {
 			$scope.items = data;
 
 			$.each(data, function(index, value) {
-				$scope.flewIn(index, value.yScale, value.timeout);
+				$scope.flewIn(index, value.yScale);
 			});
 		});
 	};
@@ -83,7 +83,7 @@ app.controller('HomeController', function($scope, $http) {
 		var data = $scope.items;
 
 		$.each(data, function(index, value) {
-			$scope.flewOut(index, value.yScale, value.timeout);
+			$scope.flewOut(index, value.yScale);
 		});
 
 		// 跳转到指定url地址
