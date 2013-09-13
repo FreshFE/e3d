@@ -414,6 +414,12 @@ button:hover{
 	left:770px;
 }
 
+#thumb-12 {
+	width:624px;
+	height:30px;
+	left:340px;
+}
+
 #wrapper1 .tile {
 	position: absolute;
 	top: 2000px;
