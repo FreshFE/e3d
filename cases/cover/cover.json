@@ -3,84 +3,91 @@
 		"title": "标题一",
 		"category": "city-paris",
 		"img": "cases/cover/1.jpg",
-		"yScale": 0,
-		"timeout": 200
+		"xScale": 0,
+		"yScale": 0
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 113,
-		"timeout": 100
+		"xScale": 0,
+		"yScale": 113
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 0,
-		"timeout": 300
+		"xScale": 225,
+		"yScale": 0
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 0,
-		"timeout": 1500
+		"xScale": 375,
+		"yScale": 0
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 75,
-		"timeout": 150
+		"xScale": 225,
+		"yScale": 75
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 0,
-		"timeout": 2500
+		"xScale": 525,
+		"yScale": 0
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 225,
-		"timeout": 3000
+		"xScale": 0,
+		"yScale": 225
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 395,
-		"timeout": 3500
+		"xScale": 0,
+		"yScale": 395
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 395,
-		"timeout": 4000
+		"xScale": 170,
+		"yScale": 395
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 265,
-		"timeout": 4500
+		"xScale": 340,
+		"yScale": 265
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 265,
-		"timeout": 400
+		"xScale": 770,
+		"yScale": 265
 	},
 	{
 		"title": "标题一",
 		"category": "#",
 		"img": "cases/cover/1.jpg",
-		"yScale": 373,
-		"timeout": 5500
+		"xScale": 770,
+		"yScale": 373
+	},
+	{
+		"title": "标题一",
+		"category": "#",
+		"img": "cases/cover/1.jpg",
+		"xScale": 340,
+		"yScale": 225
 	}
 ]
