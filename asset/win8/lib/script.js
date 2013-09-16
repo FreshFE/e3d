@@ -1,25 +1,3 @@
-// javascript闭包
-(function($){
-
-    "use strict"; //严格模式
-
-    //jQuery插件主体
-
-    $.fn.onComplete = function(callback){
-        return this.each(function(){
-
-            if(this.complete == true){
-                callback.call(this);    // 通过call的方法调用该函数
-            } else {
-                this.onload = function(){
-                    callback.call(this);
-                }
-            }
-        });
-    }
-
-})(jQuery);
-
 /**
  * 定位#place的高度
  */
@@ -89,15 +67,11 @@ app.controller('HomeController', function($scope, $http) {
 
 			$scope.items = data;
 
-			// setTimeout(function() {
-				
-			// }, 2000);
-
-			$('img').onComplete(function() {
+			setTimeout(function() {
 				$.each(data, function(index, value) {
 					$scope.flewIn(index, value.yScale);
-				});				
-			});
+				});
+			}, 1000);
 		});
 	};
 
@@ -118,7 +92,7 @@ app.controller('HomeController', function($scope, $http) {
 
 		setTimeout(function() {
 			window.location.href = url;
-		}, 4000);
+		}, 2000);
 	}
 
 	$scope.fetch();
