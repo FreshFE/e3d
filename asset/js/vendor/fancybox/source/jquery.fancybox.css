@@ -173,6 +173,7 @@ img.fancybox-image {
 	width: 60px;
 	border-radius: 3px;
 	cursor: pointer;
+	z-index: 9000;
 }
 
 .fancybox-new-nav-prev {
