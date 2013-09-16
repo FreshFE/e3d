@@ -47,6 +47,7 @@ app.controller('WallController', function($scope, $http) {
 				openEffect	: 'none',
 				closeEffect	: 'none',
 				padding: 0,
+				margin: 100,
 				beforeShow: function() {
 					
 					var wHeight = $(window).height();
