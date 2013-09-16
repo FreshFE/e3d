@@ -39,10 +39,42 @@ app.controller('WallController', function($scope, $http) {
 
 			$scope.viewer = data;
 
+			var $prev = $('<div class="fancybox-new-nav fancybox-new-nav-prev"></div>');
+			var $next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
+			var $title = $('.fancybox-title span.child');
+
 			$(".fancybox").fancybox({
 				openEffect	: 'none',
 				closeEffect	: 'none',
-				padding: 0
+				padding: 0,
+				beforeShow: function() {
+					
+					var wHeight = $(window).height();
+					var wWidth = $('.fancybox-image').width();
+
+					$prev.appendTo($('.fancybox-overlay'))
+						 .css({ 'top': (wHeight - 100) / 2 })
+						 .on('click', function() {
+						 	$.fancybox.prev();
+						 });
+					$next.appendTo($('.fancybox-overlay'))
+						 .css({ 'top': (wHeight - 100) / 2 })
+						 .on('click', function() {
+						 	$.fancybox.next();
+						 });
+
+					$('.fancybox-title span.child').css({'width': wWidth - 20});
+				},
+				onUpdate: function() {
+
+					var wHeight = $(window).height();
+					var wWidth = $('.fancybox-image').width();
+
+					$prev.css({ 'top': (wHeight - 100) / 2 });
+					$next.css({ 'top': (wHeight - 100) / 2 });
+
+					$('.fancybox-title span.child').css({'width': wWidth - 20});
+				}
 			});
 		});
 	};

@@ -68,8 +68,14 @@ app.controller('HomeController', function($scope, $http) {
 
 			$scope.items = data;
 
-			$.each(data, function(index, value) {
-				$scope.flewIn(index, value.yScale);
+			// setTimeout(function() {
+				
+			// }, 2000);
+
+			$('img').load(function() {
+				$.each(data, function(index, value) {
+					$scope.flewIn(index, value.yScale);
+				});				
 			});
 		});
 	};
