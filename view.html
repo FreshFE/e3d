@@ -20,16 +20,18 @@
 <body ng-controller="WallController">
 
 	<div class="header" id="J_header">
-		<div class="logo">
-			<a href="index.html">Logo</a>
-		</div>
-		<div class="nav-current">
-			{{ viewer.title }}
-		</div>
-		<div class="nav-right">
-			<ul class="nav">
-				<li ng-repeat="menu in menus"><a href="#{{ menu.category }}">{{ menu.title }}</a></li>
-			</ul>
+		<div class="inner" style="width: 940px; margin: 0 auto;">
+			<div class="logo">
+				<a href="index.html">Logo</a>
+			</div>
+			<div class="nav-current">
+				{{ viewer.title }}
+			</div>
+			<div class="nav-right">
+				<ul class="nav">
+					<li ng-repeat="menu in menus"><a href="#{{ menu.category }}">{{ menu.title }}</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
