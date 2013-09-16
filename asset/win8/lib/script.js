@@ -1,3 +1,25 @@
+// javascript闭包
+(function($){
+
+    "use strict"; //严格模式
+
+    //jQuery插件主体
+
+    $.fn.onComplete = function(callback){
+        return this.each(function(){
+
+            if(this.complete == true){
+                callback.call(this);    // 通过call的方法调用该函数
+            } else {
+                this.onload = function(){
+                    callback.call(this);
+                }
+            }
+        });
+    }
+
+})(jQuery);
+
 /**
  * 定位#place的高度
  */
@@ -49,10 +71,9 @@ app.controller('HomeController', function($scope, $http) {
 		id = 12 - id;
 
 		setTimeout(function() {
-
 			$('#thumb-'+id).transition({
-				top: 1000,
-			}, 300);
+				top: -1000,
+			});
 
 		}, timeout);
 	}
@@ -72,7 +93,7 @@ app.controller('HomeController', function($scope, $http) {
 				
 			// }, 2000);
 
-			$('img').load(function() {
+			$('img').onComplete(function() {
 				$.each(data, function(index, value) {
 					$scope.flewIn(index, value.yScale);
 				});				
@@ -97,7 +118,7 @@ app.controller('HomeController', function($scope, $http) {
 
 		setTimeout(function() {
 			window.location.href = url;
-		}, 2000);
+		}, 4000);
 	}
 
 	$scope.fetch();
