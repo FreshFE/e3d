@@ -106,16 +106,16 @@ img.fancybox-image {
 	position: absolute;
 	/*top: -18px;
 	right: -18px;*/
-	background: rgba(0,0,0,.2) url(x.png) center;
+	background: url(arrow/x.png) center;
 	top: 50%;
 	left: 50%;
-	width: 130px;
-	height: 130px;
-	margin-left: -65px;
-	margin-top: -65px;
+	width: 120px;
+	height: 120px;
+	margin-left: -60px;
+	margin-top: -60px;
 	cursor: pointer;
 	z-index: 8040;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 }
 
 .fancybox-nav {
@@ -167,23 +167,23 @@ img.fancybox-image {
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	background: rgba(255,255,255,.3);
-	background-repeat: center;
+	/*background: rgba(255,255,255,.3);*/
+	/*background-repeat: center;*/
 	height: 100px;
 	width: 60px;
-	border-radius: 3px;
+	border-radius: 4px;
 	cursor: pointer;
 	z-index: 9000;
 }
 
 .fancybox-new-nav-prev {
-	background-image: url(prev.png);
+	background-image: url(arrow/prev.png);
 }
 
 .fancybox-new-nav-next {
 	left: auto;
 	right: 20px;
-	background-image: url(next.png);
+	background-image: url(arrow/next.png);
 }
 
 .fancybox-tmp {
