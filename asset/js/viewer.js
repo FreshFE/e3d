@@ -43,38 +43,48 @@ app.controller('WallController', function($scope, $http) {
 			var $next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
 			var $title = $('.fancybox-title span.child');
 
+			var resize = function() {
+
+				// 拿到尺寸
+				var wHeight = $(window).height();
+				var wWidth = $('.fancybox-image').width();
+				var pWidth = $('.fancybox-wrap').width();
+				var pLeft = $('.fancybox-wrap').offset().left;
+
+				// 赋值两对丑死的耳朵，破设计案
+				$prev.css({
+					'top': (wHeight - 100) / 2,
+					'left': pLeft - 80
+				});
+				$next.css({
+					'top': (wHeight - 100) / 2,
+					'left': pLeft + pWidth + 20
+				});
+
+				// 调整关闭按钮位置
+				$('.fancybox-title span.child').css({'width': wWidth - 20});
+			}
+
 			$(".fancybox").fancybox({
 				openEffect	: 'none',
 				closeEffect	: 'none',
 				padding: 0,
 				margin: 100,
 				beforeShow: function() {
-					
-					var wHeight = $(window).height();
-					var wWidth = $('.fancybox-image').width();
 
 					$prev.appendTo($('.fancybox-overlay'))
-						 .css({ 'top': (wHeight - 100) / 2 })
 						 .on('click', function() {
 						 	$.fancybox.prev();
 						 });
 					$next.appendTo($('.fancybox-overlay'))
-						 .css({ 'top': (wHeight - 100) / 2 })
 						 .on('click', function() {
 						 	$.fancybox.next();
 						 });
 
-					$('.fancybox-title span.child').css({'width': wWidth - 20});
+					resize();
 				},
 				onUpdate: function() {
-
-					var wHeight = $(window).height();
-					var wWidth = $('.fancybox-image').width();
-
-					$prev.css({ 'top': (wHeight - 100) / 2 });
-					$next.css({ 'top': (wHeight - 100) / 2 });
-
-					$('.fancybox-title span.child').css({'width': wWidth - 20});
+					resize();
 				}
 			});
 		});

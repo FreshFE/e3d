@@ -447,61 +447,62 @@ body {
   background: rgba(255, 255, 255, 0.2);
   top: -50px;
   left: 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 13, ../sass/project/_content.scss */
+/* line 14, ../sass/project/_content.scss */
 .header > .inner {
   width: 940px;
   margin: 0 auto;
 }
-/* line 18, ../sass/project/_content.scss */
+/* line 19, ../sass/project/_content.scss */
 .header .logo {
   float: left;
   font-size: 30px;
   color: #fff;
   line-height: 50px;
 }
-/* line 24, ../sass/project/_content.scss */
+/* line 25, ../sass/project/_content.scss */
 .header .logo a {
   color: #fff;
   text-decoration: none;
 }
-/* line 30, ../sass/project/_content.scss */
+/* line 31, ../sass/project/_content.scss */
 .header .nav-current {
   float: left;
   margin-left: 50px;
   color: #fff;
   line-height: 50px;
 }
-/* line 37, ../sass/project/_content.scss */
+/* line 38, ../sass/project/_content.scss */
 .header .nav-right {
   float: right;
 }
-/* line 41, ../sass/project/_content.scss */
+/* line 42, ../sass/project/_content.scss */
 .header .nav-right ul.nav li {
   float: left;
   line-height: 50px;
   margin-left: 20px;
 }
-/* line 46, ../sass/project/_content.scss */
+/* line 47, ../sass/project/_content.scss */
 .header .nav-right ul.nav li a {
   color: #888;
 }
 
-/* line 54, ../sass/project/_content.scss */
+/* line 55, ../sass/project/_content.scss */
 .content {
   width: 940px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-/* line 60, ../sass/project/_content.scss */
+/* line 61, ../sass/project/_content.scss */
 ul.nav-photowall {
   margin-left: -20px;
   margin-top: -20px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 66, ../sass/project/_content.scss */
+/* line 67, ../sass/project/_content.scss */
 ul.nav-photowall li {
   width: 220px;
   margin-left: 20px;
@@ -509,7 +510,7 @@ ul.nav-photowall li {
   cursor: pointer;
   float: left;
 }
-/* line 73, ../sass/project/_content.scss */
+/* line 74, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox {
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 10px;
@@ -519,13 +520,13 @@ ul.nav-photowall li .imgbox {
   border: 1px solid rgba(255, 255, 255, 0.03);
   line-height: 200px;
 }
-/* line 83, ../sass/project/_content.scss */
+/* line 84, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox img {
   max-width: 200px;
   max-height: 200px;
   vertical-align: middle;
 }
-/* line 90, ../sass/project/_content.scss */
+/* line 91, ../sass/project/_content.scss */
 ul.nav-photowall li .titlebox {
   color: #888;
   text-align: center;
