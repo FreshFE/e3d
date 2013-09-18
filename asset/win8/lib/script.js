@@ -68,10 +68,13 @@ app.controller('HomeController', function($scope, $http) {
 			$scope.items = data;
 
 			setTimeout(function() {
+
+				$('#load').fadeOut(1000);
+
 				$.each(data, function(index, value) {
 					$scope.flewIn(index, value.yScale);
 				});
-			}, 1000);
+			}, 2000);
 		});
 	};
 
