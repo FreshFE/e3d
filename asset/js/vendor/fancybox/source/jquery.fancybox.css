@@ -171,19 +171,19 @@ img.fancybox-image {
 	/*background-repeat: center;*/
 	height: 100px;
 	width: 60px;
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	cursor: pointer;
 	z-index: 9000;
 }
 
 .fancybox-new-nav-prev {
-	background-image: url(arrow/prev.png);
+	background-image: url(arrow/prev1.png);
 }
 
 .fancybox-new-nav-next {
 	left: auto;
 	right: 20px;
-	background-image: url(arrow/next.png);
+	background-image: url(arrow/next1.png);
 }
 
 .fancybox-tmp {
