@@ -430,7 +430,7 @@ nav ul, nav ul li {
 /* line 4, ../sass/project/_layout.scss */
 html,
 body {
-  background: #262626;
+  background: #262626 url(../images/bg.png) repeat;
 }
 
 /* line 8, ../sass/project/_layout.scss */
@@ -519,7 +519,7 @@ ul.nav-photowall li {
 }
 /* line 86, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox {
-  background: rgba(255, 255, 255, 0.1);
+  background: #333;
   margin-bottom: 10px;
   width: 200px;
   height: 200px;
@@ -527,13 +527,13 @@ ul.nav-photowall li .imgbox {
   border: 1px solid rgba(255, 255, 255, 0.03);
   line-height: 200px;
 }
-/* line 96, ../sass/project/_content.scss */
+/* line 97, ../sass/project/_content.scss */
 ul.nav-photowall li .imgbox img {
   max-width: 200px;
   max-height: 200px;
   vertical-align: middle;
 }
-/* line 103, ../sass/project/_content.scss */
+/* line 104, ../sass/project/_content.scss */
 ul.nav-photowall li .titlebox {
   color: #888;
   text-align: center;
