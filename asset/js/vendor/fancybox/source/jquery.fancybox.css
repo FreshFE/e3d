@@ -256,7 +256,7 @@ img.fancybox-image {
 }
 
 .fancybox-title-float-wrap .child {
-	display: inline-block;
+	display: block;
 	/*margin-right: -100%;*/
 	padding: 9px;
 	/*background: transparent;  Fallback for web browsers that doesn't support RGBa */
