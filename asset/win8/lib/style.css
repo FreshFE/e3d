@@ -30,7 +30,8 @@
 }
 
 body{
-	background:#262626;
+	/*background:#262626;*/
+	background: #262626 url(bg.png) repeat;
 	/*overflow: hidden;*/
 }
 
