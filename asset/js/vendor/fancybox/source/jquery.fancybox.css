@@ -249,7 +249,7 @@ img.fancybox-image {
 .fancybox-title-float-wrap {
 	position: absolute;
 	bottom: 0;
-	right: 50%;
+	/*right: 50%;*/
 	/*margin-bottom: -35px;*/
 	z-index: 8050;
 	text-align: center;
