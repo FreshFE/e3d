@@ -3,13 +3,21 @@
  */
 $(document).ready(function() {
 
-	var windowWidth = $(window).width();
-	var windowHeight = $(window).height();
+	var resize = function() {
+		var windowWidth = $(window).width();
+		var windowHeight = $(window).height();
 
-	var left = Math.floor((windowWidth - 975) / 2);
-	var top = Math.floor((windowHeight - 480) / 2) - 80;
-	
-	$('#place').css({'left': left, 'top': top});
+		var left = Math.floor((windowWidth - 975) / 2);
+		var top = Math.floor((windowHeight - 480) / 2) - 80;
+		
+		$('#place').css({'left': left, 'top': top});
+	}
+
+	resize();
+
+	$(window).resize(function() {
+		resize();
+	});
 });
 
 
