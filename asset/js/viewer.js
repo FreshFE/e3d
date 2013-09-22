@@ -70,7 +70,7 @@ app.controller('WallController', function($scope, $http) {
 				closeEffect	: 'none',
 				padding: 0,
 				margin: 100,
-				beforeShow: function() {
+				afterShow: function() {
 
 					$prev.appendTo($('.fancybox-overlay'))
 						 .on('click', function() {
