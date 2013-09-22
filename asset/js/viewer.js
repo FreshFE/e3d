@@ -62,7 +62,7 @@ app.controller('WallController', function($scope, $http) {
 				});
 
 				// 调整关闭按钮位置
-				$('.fancybox-title span.child').css({'width': wWidth - 20});
+				$('.fancybox-title .child').css({'width': wWidth});
 			}
 
 			$(".fancybox").fancybox({
