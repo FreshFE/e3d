@@ -9,6 +9,10 @@ $(document).ready(function() {
 
 		var left = Math.floor((windowWidth - 975) / 2);
 		var top = Math.floor((windowHeight - 480) / 2) - 80;
+
+		if (top < 0) {
+			top = 0;
+		}
 		
 		$('#place').css({'left': left, 'top': top});
 	}
