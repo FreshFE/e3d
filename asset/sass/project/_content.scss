@@ -4,3 +4,17 @@
 .stage {
 	position: absolute;
 }
+
+.tile {
+	position: absolute;
+	overflow: hidden;
+	-webkit-transform: translate(0, 1000px);
+}
+
+.logo {
+	white-space: nowrap;
+	position: absolute;
+	top: -60px;
+	color: #fff;
+	font-size: 36px;
+}

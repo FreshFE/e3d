@@ -1,0 +1,62 @@
+{
+	"name": "E3D Home",
+	"type": "tiles",
+	"width": 800,
+	"height": 600,
+	"tiles": [
+		{
+			"title": "标题一",
+			"link": "city",
+			"img": "city/1.jpg",
+			"width": 390,
+			"height": 190,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"title": "标题一",
+			"link": "",
+			"img": "city/2.jpg",
+			"width": 390,
+			"height": 190,
+			"x": 400,
+			"y": 0
+		},
+		{
+			"title": "标题一",
+			"link": "",
+			"img": "city/3.jpg",
+			"width": 390,
+			"height": 190,
+			"x": 0,
+			"y": 200
+		},
+		{
+			"title": "标题一",
+			"link": "",
+			"img": "city/1.jpg",
+			"width": 390,
+			"height": 190,
+			"x": 400,
+			"y": 200
+		},
+		{
+			"title": "标题一",
+			"link": "",
+			"img": "city/3.jpg",
+			"width": 390,
+			"height": 190,
+			"x": 0,
+			"y": 400
+		},
+		{
+			"title": "标题一",
+			"link": "",
+			"img": "city/1.jpg",
+			"width": 390,
+			"height": 190,
+			"x": 400,
+			"y": 400
+		}
+	]
+}

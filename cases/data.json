@@ -1,10 +1,12 @@
 {
 	"name": "E3D Home",
 	"type": "tiles",
+	"width": 975,
+	"height": 480,
 	"tiles": [
 		{
 			"title": "标题一",
-			"link": "",
+			"link": "city",
 			"img": "tiles/bookmark_00.png",
 			"width": 215,
 			"height": 103,
@@ -114,7 +116,7 @@
 			"title": "标题一",
 			"link": "",
 			"img": "tiles/bookmark_12.png",
-			"width": 630,
+			"width": 625,
 			"height": 30,
 			"x": 340,
 			"y": 225

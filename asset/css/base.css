@@ -437,3 +437,19 @@ body {
 .stage {
   position: absolute;
 }
+
+/* line 8, ../sass/project/_content.scss */
+.tile {
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: translate(0, 1000px);
+}
+
+/* line 14, ../sass/project/_content.scss */
+.logo {
+  white-space: nowrap;
+  position: absolute;
+  top: -60px;
+  color: #fff;
+  font-size: 36px;
+}
