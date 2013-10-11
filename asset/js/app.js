@@ -37,7 +37,7 @@
 			var that = this;
 
 			$.get(
-				'cases/' + folder + '/data.json',
+				'cases/' + folder + '.json',
 				function(data) {
 
 					// 保存数据
@@ -222,7 +222,7 @@ $(document).ready(function() {
 		},
 
 		home: function() {
-			this.slide('');
+			this.slide('main');
 		},
 
 		slide: function(folder) {

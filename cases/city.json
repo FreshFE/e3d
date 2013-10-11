@@ -6,6 +6,7 @@
 	"tiles": [
 		{
 			"title": "标题一",
+			"type": "fancybox",
 			"link": "city",
 			"img": "city/1.jpg",
 			"width": 390,
@@ -15,6 +16,7 @@
 		},
 		{
 			"title": "标题一",
+			"type": "fancybox",
 			"link": "",
 			"img": "city/2.jpg",
 			"width": 390,
@@ -24,6 +26,7 @@
 		},
 		{
 			"title": "标题一",
+			"type": "fancybox",
 			"link": "",
 			"img": "city/3.jpg",
 			"width": 390,
@@ -33,6 +36,7 @@
 		},
 		{
 			"title": "标题一",
+			"type": "fancybox",
 			"link": "",
 			"img": "city/1.jpg",
 			"width": 390,
@@ -42,6 +46,7 @@
 		},
 		{
 			"title": "标题一",
+			"type": "fancybox",
 			"link": "",
 			"img": "city/3.jpg",
 			"width": 390,
@@ -51,6 +56,7 @@
 		},
 		{
 			"title": "标题一",
+			"type": "fancybox",
 			"link": "",
 			"img": "city/1.jpg",
 			"width": 390,
