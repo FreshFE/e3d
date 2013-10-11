@@ -77,7 +77,21 @@
 		 * @return string
 		 */
 		buildHtml: function(item) {
-			return '<div class="tile" style="width: '+item.width+'px; height: '+item.height+'px; top: '+item.y+'px; left: '+item.x+'px;"><a href="#slide/'+ item.link +'" title="'+ item.title +'"><img src="cases/' + item.img + '"></a></div>';
+
+			// 默认超链接属性
+			var attr = '',
+				link = '';
+
+			// 设置特殊超链接属性
+			if(item.type === 'fancybox') {
+				attr = ' class="fancybox"';
+				link = item.link;
+			}
+			else {
+				link = '#slide/'+ item.link;
+			}
+
+			return '<div class="tile" style="width: '+item.width+'px; height: '+item.height+'px; top: '+item.y+'px; left: '+item.x+'px;"><a href="'+ link +'" title="'+ item.title +'"'+ attr +'><img src="cases/' + item.img + '"></a></div>';
 		},
 
 		/**
