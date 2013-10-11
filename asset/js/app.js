@@ -119,7 +119,7 @@
 				top = 80;
 			}
 			
-			this.$el.css({
+			this.$el.transition({
 				'left': left,
 				'top': top,
 				'width': this.model.width,

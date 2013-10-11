@@ -453,3 +453,8 @@ body {
   color: #fff;
   font-size: 36px;
 }
+/* line 21, ../sass/project/_content.scss */
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
