@@ -26,6 +26,15 @@
 		 */
 		model: null,
 
+		initialize: function() {
+
+			var that = this;
+			
+			$(window).resize(function() {
+				that.changeStageSize();
+			});
+		},
+
 		/**
 		 * 根据模型数据调整视图
 		 *
@@ -64,74 +73,10 @@
 
 					// 绑定点击事件
 					that.onClickEvent();
-
-					// 添加关于fancybox的事件绑定
-					// that.onFancybox();
 				}
 			);
 
 			return this;
-		},
-
-		onFancybox: function() {
-
-			var $prev = $('<div class="fancybox-new-nav fancybox-new-nav-prev"></div>');
-			var $next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
-			var $title = $('.fancybox-title span.child');
-
-			var resize = function() {
-
-				// 拿到尺寸
-				var wHeight = $(window).height();
-				var wWidth = $('.fancybox-image').width();
-				var pWidth = $('.fancybox-wrap').width();
-				var pLeft = $('.fancybox-wrap').offset().left;
-
-				// 赋值两对丑死的耳朵，破设计案
-				$prev.css({
-					'top': (wHeight - 100) / 2,
-					'left': pLeft - 80
-				});
-				$next.css({
-					'top': (wHeight - 100) / 2,
-					'left': pLeft + pWidth + 20
-				});
-
-				// 调整关闭按钮位置
-				$('.fancybox-title .child').css({'width': wWidth});
-			}
-
-			this.tiles.fancybox(
-				[
-					{ href: 'http://e3d.dev:88/cases/city/1.jpg' },
-					{ href: 'http://e3d.dev:88/cases/city/2.jpg' },
-					{ href: 'http://e3d.dev:88/cases/city/3.jpg' }
-				],
-				{
-					type: 'image',
-					openEffect	: 'none',
-					closeEffect	: 'none',
-					padding: 0,
-					margin: 100,
-					// href: 'http://e3d.dev:88/cases/city/1.jpg',
-					afterShow: function() {
-
-						$prev.appendTo($('.fancybox-overlay'))
-							 .on('click', function() {
-							 	$.fancybox.prev();
-							 });
-						$next.appendTo($('.fancybox-overlay'))
-							 .on('click', function() {
-							 	$.fancybox.next();
-							 });
-
-						resize();
-					},
-					onUpdate: function() {
-						resize();
-					}
-				}
-			);
 		},
 
 		/**
@@ -197,7 +142,7 @@
 				top = 80;
 			}
 			
-			this.$el.transition({
+			this.$el.css({
 				'left': left,
 				'top': top,
 				'width': this.model.width,
