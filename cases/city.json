@@ -7,7 +7,7 @@
 		{
 			"title": "标题一",
 			"type": "fancybox",
-			"link": "city",
+			"link": "city/paris",
 			"img": "city/1.jpg",
 			"width": 390,
 			"height": 190,
