@@ -29,7 +29,7 @@
 		initialize: function() {
 
 			var that = this;
-			
+
 			$(window).resize(function() {
 				that.changeStageSize();
 			});
@@ -241,8 +241,10 @@
 
 						var opts = {
 							type: 'image',
-							openEffect	: 'none',
-							closeEffect	: 'none',
+							openEffect: 'none',
+							closeEffect: 'none',
+							nextEffect: 'none',
+							prevEffect: 'none',
 							padding: 0,
 							margin: 100,
 							afterShow: function() {
