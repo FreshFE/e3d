@@ -8,7 +8,7 @@
 .tile {
 	position: absolute;
 	overflow: hidden;
-	-webkit-transform: translate(0, 1000px);
+	@include transform(translate(0, 1000px));
 }
 
 .logo {
