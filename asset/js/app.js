@@ -255,9 +255,21 @@
 									 	$.fancybox.next();
 									 });
 
-								$('.fancybox-image').on('click', function() {
-									$('.fancybox-close').fadeToggle();
-								});
+								// 判断是否支持触摸属性，如果支持则改变关闭按钮出现的情况
+								if('ontouchstart' in document.documentElement) {
+
+									$('.fancybox-image').on('click', function() {
+										$('.fancybox-close').fadeToggle();
+									});
+								}
+								else {
+
+									$('.fancybox-wrap').hover(function() {
+										$('.fancybox-close').fadeIn();
+									}, function() {
+										$('.fancybox-close').hide();
+									});
+								}
 
 								resize();
 							},
