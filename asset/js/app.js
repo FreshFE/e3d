@@ -213,9 +213,9 @@
 					'cases/' + href + '.json',
 					function(data) {
 						
-						var $prev = $('<div class="fancybox-new-nav fancybox-new-nav-prev"></div>');
-						var $next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
-						var $title = $('.fancybox-title span.child');
+						// 定义Node对象
+						var $prev = $('<div class="fancybox-new-nav fancybox-new-nav-prev"></div>'),
+							$next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
 
 						var resize = function() {
 
@@ -234,9 +234,6 @@
 								'top': (wHeight - 100) / 2,
 								'left': pLeft + pWidth + 20
 							});
-
-							// 调整关闭按钮位置
-							$('.fancybox-title .child').css({'width': wWidth});
 						}
 
 						var opts = {
@@ -257,6 +254,10 @@
 									 .on('click', function() {
 									 	$.fancybox.next();
 									 });
+
+								$('.fancybox-image').on('click', function() {
+									$('.fancybox-close').fadeToggle();
+								});
 
 								resize();
 							},
