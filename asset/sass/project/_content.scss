@@ -16,10 +16,16 @@
 	position: absolute;
 	top: -60px;
 	color: #fff;
-	font-size: 36px;
+	font-size: 40px;
 
 	a {
+		display: inline-block;
 		color: #fff;
 		text-decoration: none;
+		margin-right: 10px;
+	}
+
+	span {
+		font-size: 20px;
 	}
 }
