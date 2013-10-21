@@ -228,11 +228,11 @@
 							// 赋值两对丑死的耳朵，破设计案
 							$prev.css({
 								'top': (wHeight - 100) / 2,
-								'left': pLeft - 80
+								'left': pLeft - 70
 							});
 							$next.css({
 								'top': (wHeight - 100) / 2,
-								'left': pLeft + pWidth + 20
+								'left': pLeft + pWidth + 10
 							});
 						}
 
