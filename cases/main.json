@@ -126,8 +126,8 @@
 		},
 		{
 			"title": "标题一",
-			"type": "category",
-			"link": "",
+			"type": "external",
+			"link": "http://www.baidu.com",
 			"img": "main/bookmark_12.png",
 			"width": 625,
 			"height": 30,
