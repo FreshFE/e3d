@@ -96,6 +96,10 @@
 				attr = ' class="fancybox"';
 				link = item.link;
 			}
+			else if(item.type === 'external') {
+				attr = ' class="external" target="_blank"';
+				link = item.link;
+			}
 			else {
 				link = '#slide/'+ item.link;
 			}
