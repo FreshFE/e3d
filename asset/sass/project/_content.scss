@@ -5,6 +5,10 @@
 	position: absolute;
 }
 
+.tiles {
+	margin-bottom: 10px;
+}
+
 .tile {
 	position: absolute;
 	overflow: hidden;
@@ -27,5 +31,15 @@
 
 	span {
 		font-size: 20px;
+	}
+}
+
+.footer {
+	text-align: center;
+	a.records {
+		color: #fff;
+		color: rgba(255,255,255,.2);
+		text-decoration: none;
+		font-size: 14px;
 	}
 }

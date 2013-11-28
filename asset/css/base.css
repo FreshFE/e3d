@@ -439,6 +439,11 @@ body {
 }
 
 /* line 8, ../sass/project/_content.scss */
+.tiles {
+  margin-bottom: 10px;
+}
+
+/* line 12, ../sass/project/_content.scss */
 .tile {
   position: absolute;
   overflow: hidden;
@@ -449,7 +454,7 @@ body {
   transform: translate(0, 1000px);
 }
 
-/* line 14, ../sass/project/_content.scss */
+/* line 18, ../sass/project/_content.scss */
 .logo {
   white-space: nowrap;
   position: absolute;
@@ -457,14 +462,26 @@ body {
   color: #fff;
   font-size: 40px;
 }
-/* line 21, ../sass/project/_content.scss */
+/* line 25, ../sass/project/_content.scss */
 .logo a {
   display: inline-block;
   color: #fff;
   text-decoration: none;
   margin-right: 10px;
 }
-/* line 28, ../sass/project/_content.scss */
+/* line 32, ../sass/project/_content.scss */
 .logo span {
   font-size: 20px;
+}
+
+/* line 37, ../sass/project/_content.scss */
+.footer {
+  text-align: center;
+}
+/* line 39, ../sass/project/_content.scss */
+.footer a.records {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  font-size: 14px;
 }
