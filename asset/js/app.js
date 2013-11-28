@@ -153,6 +153,11 @@
 				'height': this.model.height
 			});
 
+			$('.tiles', this.$el).css({
+				'width': this.model.width,
+				'height': this.model.height
+			});
+
 			return this;
 		},
 
