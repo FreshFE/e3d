@@ -296,9 +296,17 @@
 		},
 
 		end: function(callback) {
+
+			var that = this;
+
 			this.tilesSlideOut();
 
 			setTimeout(function() {
+
+				// 移除DOM元素
+				that.tiles.remove();
+
+				// 回调方法
 				callback.call();
 			}, 2000);
 
