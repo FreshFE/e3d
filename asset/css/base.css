@@ -456,13 +456,14 @@ body {
 
 /* line 18, ../sass/project/_content.scss */
 .logo {
+  width: 100%;
   white-space: nowrap;
   position: absolute;
   top: -60px;
   color: #fff;
   font-size: 40px;
 }
-/* line 25, ../sass/project/_content.scss */
+/* line 26, ../sass/project/_content.scss */
 .logo a {
   display: inline-block;
   color: #fff;
@@ -470,18 +471,27 @@ body {
   margin-right: 10px;
 }
 /* line 32, ../sass/project/_content.scss */
+.logo a img {
+  display: block;
+  height: 50px;
+}
+/* line 38, ../sass/project/_content.scss */
 .logo span {
   font-size: 20px;
+  color: #a9956f;
+  text-align: right;
+  float: right;
+  line-height: 60px;
 }
 
-/* line 37, ../sass/project/_content.scss */
+/* line 47, ../sass/project/_content.scss */
 .footer {
   text-align: center;
 }
-/* line 39, ../sass/project/_content.scss */
+/* line 49, ../sass/project/_content.scss */
 .footer a.records {
   color: #fff;
   color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 10px;
 }

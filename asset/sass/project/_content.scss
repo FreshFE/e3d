@@ -16,6 +16,7 @@
 }
 
 .logo {
+	width: 100%;
 	white-space: nowrap;
 	position: absolute;
 	top: -60px;
@@ -27,10 +28,19 @@
 		color: #fff;
 		text-decoration: none;
 		margin-right: 10px;
+
+		img {
+			display: block;
+			height: 50px;
+		}
 	}
 
 	span {
 		font-size: 20px;
+		color: #a9956f;
+		text-align: right;
+		float: right;
+		line-height: 60px;
 	}
 }
 
@@ -40,6 +50,6 @@
 		color: #fff;
 		color: rgba(255,255,255,.2);
 		text-decoration: none;
-		font-size: 14px;
+		font-size: 10px;
 	}
 }
