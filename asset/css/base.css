@@ -487,11 +487,35 @@ body {
 /* line 47, ../sass/project/_content.scss */
 .footer {
   text-align: center;
+  position: relative;
 }
-/* line 49, ../sass/project/_content.scss */
+/* line 51, ../sass/project/_content.scss */
 .footer a.records {
   color: #fff;
   color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
   font-size: 10px;
+}
+/* line 58, ../sass/project/_content.scss */
+.footer .audiobox {
+  position: absolute;
+  text-align: left;
+  right: 0;
+  top: 0;
+}
+/* line 64, ../sass/project/_content.scss */
+.footer .audiobox a.switch {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/audio_bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999;
+}
+/* line 76, ../sass/project/_content.scss */
+.footer .audiobox a.switch.close {
+  background-position: -16px 0;
 }
