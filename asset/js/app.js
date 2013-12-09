@@ -374,3 +374,26 @@ $(document).ready(function() {
 	var router = new Router();
 	Backbone.history.start();
 });
+
+// 背景音乐相关的代码
+$(document).ready(function() {
+
+	var music = document.getElementById('audio-background');
+
+	// 播放全局背景音乐
+	setTimeout(function() {
+		music.play();
+	}, 3000);
+
+	// 监听声音控制开光
+	$('#audio-background-switch').on('click', function() {
+		if (music.paused) {
+			music.play();
+			$(this).removeClass('close');
+		}
+		else {
+			music.pause();
+			$(this).addClass('close');
+		}
+	});
+});
