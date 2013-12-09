@@ -180,6 +180,9 @@
 				}, timeout);
 			});
 
+			// 播放飞入声音
+			document.getElementById('audio-flewin').play();
+
 			return this;
 		},
 
