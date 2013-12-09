@@ -201,7 +201,7 @@
 
 				// 随机延迟
 				setTimeout(function() {
-					$(value).transition({ y: -1000 });
+					$(value).transition({ y: -1500 });
 				}, timeout);
 			});
 
