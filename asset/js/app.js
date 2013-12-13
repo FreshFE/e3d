@@ -234,7 +234,10 @@
 		 */
 		onClickEvent: function() {
 
-			$('.fancybox', this.tiles).on('click', function() {
+			$('.fancybox', this.tiles).on('click', function(event) {
+
+				// 阻止默认点击事件
+				event.preventDefault();
 
 				// 获得链接
 				var href = $(this).attr('href');
@@ -312,8 +315,6 @@
 						$.fancybox(data, opts);
 					}
 				);
-
-				return false;
 			});
 		},
 
