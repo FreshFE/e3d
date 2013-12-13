@@ -104,7 +104,14 @@
 				link = '#slide/'+ item.link;
 			}
 
-			return '<div class="tile" style="width: '+item.width+'px; height: '+item.height+'px; top: '+item.y+'px; left: '+item.x+'px;"><a href="'+ link +'" title="'+ item.title +'"'+ attr +'><img src="cases/' + item.img + '"></a></div>';
+			// 支持transform的情况下使用transform作为动画过渡
+			// 不支持的情况下使用top的位移值
+			if (Modernizr.csstransforms) {
+				return '<div class="tile" style="width: '+item.width+'px; height: '+item.height+'px; top: '+item.y+'px; left: '+item.x+'px;"><a href="'+ link +'" title="'+ item.title +'"'+ attr +'><img src="cases/' + item.img + '"></a></div>';
+			}
+			else {
+				return '<div class="tile" data-top="'+item.y+'" style="width: '+item.width+'px; height: '+item.height+'px; top: -1000px; left: '+item.x+'px;"><a href="'+ link +'" title="'+ item.title +'"'+ attr +'><img src="cases/' + item.img + '"></a></div>';
+			}
 		},
 
 		/**
@@ -176,7 +183,13 @@
 
 				// 随机延迟
 				setTimeout(function() {
-					$(value).transition({ y: 0 }, 300, 'snap');
+					if (Modernizr.csstransforms) {
+						$(value).transition({ y: 0 }, 300, 'snap');
+					}
+					else {
+						var $value = $(value);
+						$value.transition({ top: $value.data('top') }, 300, 'snap');
+					}
 				}, timeout);
 			});
 
@@ -201,7 +214,13 @@
 
 				// 随机延迟
 				setTimeout(function() {
-					$(value).transition({ y: -1500 });
+					if (Modernizr.csstransforms) {
+						$(value).transition({ y: -1500 });
+					}
+					else {
+						var $value = $(value);
+						$value.transition({ top: -1500 });
+					}
 				}, timeout);
 			});
 
