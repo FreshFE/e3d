@@ -406,7 +406,11 @@ $(document).ready(function() {
 	}, 3000);
 
 	// 监听声音控制开光
-	$('#audio-background-switch').on('click', function() {
+	$('#audio-background-switch').on('click', function(event) {
+
+		// 阻止默认点击事件
+		event.preventDefault();
+
 		if (music.paused) {
 			music.play();
 			$(this).removeClass('close');
