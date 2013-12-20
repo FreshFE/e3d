@@ -131,7 +131,7 @@
 		 * @return this
 		 */
 		changeLogo: function() {
-			$('#logo').html(this.model.name);
+			$('#category').html(this.model.name);
 			return this;
 		},
 
