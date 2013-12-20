@@ -248,7 +248,7 @@ figure {
  */
 /* line 253, ../sass/base/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -486,24 +486,26 @@ body {
 
 /* line 47, ../sass/project/_content.scss */
 .footer {
+  width: 100%;
   text-align: center;
-  position: relative;
+  position: absolute;
 }
-/* line 51, ../sass/project/_content.scss */
+/* line 52, ../sass/project/_content.scss */
 .footer a.records {
   color: #fff;
   color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
   font-size: 10px;
 }
-/* line 58, ../sass/project/_content.scss */
+/* line 59, ../sass/project/_content.scss */
 .footer .audiobox {
   position: absolute;
   text-align: left;
   right: 0;
   top: 0;
+  width: 16px;
 }
-/* line 64, ../sass/project/_content.scss */
+/* line 66, ../sass/project/_content.scss */
 .footer .audiobox a.switch {
   display: block;
   width: 16px;
@@ -515,7 +517,7 @@ body {
   line-height: 0;
   text-indent: -9999;
 }
-/* line 76, ../sass/project/_content.scss */
+/* line 78, ../sass/project/_content.scss */
 .footer .audiobox a.switch.close {
   background-position: -16px 0;
 }
