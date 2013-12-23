@@ -142,6 +142,8 @@
 		 */
 		changeStageSize: function() {
 
+			var that = this;
+
 			var windowWidth = $(window).width();
 			var windowHeight = $(window).height();
 
@@ -165,7 +167,33 @@
 				'height': this.model.height
 			});
 
+			this.windowResize();
+
+			$(window).resize(function() {
+				that.windowResize();
+			});
+
 			return this;
+		},
+
+		windowResize: function() {
+
+			var windowWidth = $(window).width();
+			var windowHeight = $(window).height();
+
+			if (this.model.height > windowHeight) {
+				windowHeight = this.model.height;
+			}
+
+			$('html').css({
+				'width': windowWidth,
+				'height': windowHeight
+			});
+
+			$('body').css({
+				'width': windowWidth,
+				'height': windowHeight
+			});
 		},
 
 		/**

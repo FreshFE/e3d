@@ -430,6 +430,12 @@ nav ul, nav ul li {
 /* line 4, ../sass/project/_layout.scss */
 html,
 body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
   background: #262626 url(../images/bg.png) repeat;
 }
 
