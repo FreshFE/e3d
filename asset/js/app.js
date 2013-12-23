@@ -275,72 +275,89 @@
 					'cases/' + href + '.json',
 					function(data) {
 						
-						// 定义Node对象
-						var $prev = $('<div class="fancybox-new-nav fancybox-new-nav-prev"></div>'),
-							$next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
+						// 判断是否存在 data.type 以及 data.type 的类型
+						if (data.type && data.type === 'video') {
 
-						var resize = function() {
+							var source = '';
 
-							// 拿到尺寸
-							var wHeight = $(window).height();
-							var wWidth = $('.fancybox-image').width();
-							var pWidth = $('.fancybox-wrap').width();
-							var pLeft = $('.fancybox-wrap').offset().left;
-
-							// 赋值两对丑死的耳朵，破设计案
-							$prev.css({
-								'top': (wHeight - 100) / 2,
-								'left': pLeft - 70
+							$.each(data.source, function(index, value) {
+								source += '<source src="'+ value.src +'"></source>';
 							});
-							$next.css({
-								'top': (wHeight - 100) / 2,
-								'left': pLeft + pWidth + 10
+
+							$.fancybox({
+								content: '<video controls="controls" preload="preload">' + source + '</video>'
 							});
 						}
+						// 默认情况下创建img
+						else {
 
-						var opts = {
-							type: 'image',
-							openEffect: 'none',
-							closeEffect: 'none',
-							nextEffect: 'none',
-							prevEffect: 'none',
-							padding: 0,
-							margin: 100,
-							afterShow: function() {
+							// 定义Node对象
+							var $prev = $('<div class="fancybox-new-nav fancybox-new-nav-prev"></div>'),
+								$next = $('<div class="fancybox-new-nav fancybox-new-nav-next"></div>');
 
-								$prev.appendTo($('.fancybox-overlay'))
-									 .on('click', function() {
-									 	$.fancybox.prev();
-									 });
-								$next.appendTo($('.fancybox-overlay'))
-									 .on('click', function() {
-									 	$.fancybox.next();
-									 });
+							var resize = function() {
 
-								// 判断是否支持触摸属性，如果支持则改变关闭按钮出现的情况
-								if('ontouchstart' in document.documentElement) {
+								// 拿到尺寸
+								var wHeight = $(window).height();
+								var wWidth = $('.fancybox-image').width();
+								var pWidth = $('.fancybox-wrap').width();
+								var pLeft = $('.fancybox-wrap').offset().left;
 
-									$('.fancybox-image').on('click', function() {
-										$('.fancybox-close').fadeToggle();
-									});
-								}
-								else {
-
-									$('.fancybox-wrap').hover(function() {
-										$('.fancybox-close').fadeIn();
-									}, function() {
-										$('.fancybox-close').hide();
-									});
-								}
-
-								resize();
-							},
-							onUpdate: function() {
-								resize();
+								// 赋值两对丑死的耳朵，破设计案
+								$prev.css({
+									'top': (wHeight - 100) / 2,
+									'left': pLeft - 70
+								});
+								$next.css({
+									'top': (wHeight - 100) / 2,
+									'left': pLeft + pWidth + 10
+								});
 							}
-						}
 
-						$.fancybox(data, opts);
+							var opts = {
+								type: 'image',
+								openEffect: 'none',
+								closeEffect: 'none',
+								nextEffect: 'none',
+								prevEffect: 'none',
+								padding: 0,
+								margin: 100,
+								afterShow: function() {
+
+									$prev.appendTo($('.fancybox-overlay'))
+										 .on('click', function() {
+										 	$.fancybox.prev();
+										 });
+									$next.appendTo($('.fancybox-overlay'))
+										 .on('click', function() {
+										 	$.fancybox.next();
+										 });
+
+									// 判断是否支持触摸属性，如果支持则改变关闭按钮出现的情况
+									if('ontouchstart' in document.documentElement) {
+
+										$('.fancybox-image').on('click', function() {
+											$('.fancybox-close').fadeToggle();
+										});
+									}
+									else {
+
+										$('.fancybox-wrap').hover(function() {
+											$('.fancybox-close').fadeIn();
+										}, function() {
+											$('.fancybox-close').hide();
+										});
+									}
+
+									resize();
+								},
+								onUpdate: function() {
+									resize();
+								}
+							}
+
+							$.fancybox(data, opts);
+						}
 					}
 				);
 			});
