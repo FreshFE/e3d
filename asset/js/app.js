@@ -286,6 +286,14 @@
 
 							$.fancybox({
 								content: '<video controls="controls" preload="preload">' + source + '</video>'
+							}, {
+								autoHeight: true,
+								autoWidth: true,
+								beforeShow: function() {
+									$('.fancybox-skin').css({
+										'background': '#000'
+									});
+								}
 							});
 						}
 						// 默认情况下创建img
